@@ -1,13 +1,18 @@
-Bulk download audio files from tokybook.com<br>
-  Writen with Python 3.9<br>
-    Required modules: bs4, requests, subprocess, time, os<br>
-  Creates subdirectory for files based off webpage title.<br>
-    -Sometimes not great because there are no standard naming conventions used on the site.<br>
-    <br>
-How to use:<br><br>
+# tokydl
 
-  -Change path of wget to your own.<br>
-    All files will download into the wget working directory.<br>
-    Stored copy of webpage source for parsing, along with directories for downloads.<br>
-  -Copy/paste the page url into the 'page = requests.get()'<br>
-  -Run script<br>
+Bulk download audio files from tokybook.com
+* Writen with Python 3.9
+* Uses standard libraries, no OS-specific idioms
+* Creates subdirectory for files based off webpage title.
+* Passes mypy 0.961, pylint 2.14.4, flake8
+
+    
+## How to use
+```
+usage: main.py [-h] -url URL [--debug]
+
+optional arguments:
+  -h, --help   show this help message and exit
+  -url URL
+  --debug, -d
+```
